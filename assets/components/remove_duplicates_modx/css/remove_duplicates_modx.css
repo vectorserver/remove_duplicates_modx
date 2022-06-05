@@ -1,0 +1,28 @@
+html,body{
+  padding: 0px!important;
+  margin: 0px!important;
+}
+
+#remove_duplicates_modx_panel{
+  background: #fff!important;
+  padding: 15px !important;
+  padding-top: 0px!important;
+  overflow: auto;
+  height: 85vh!important;
+  position: relative;
+}
+
+#form_panel{
+  position: fixed;
+
+  background: #fff;
+  right: 30px;
+  padding: 5px;
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+
+}
+
+#doubles_panel{
+  padding-top: 50px;
+}
