@@ -33,10 +33,11 @@ class remove_duplicates_modx
     public function initialize(): string
     {
 
+        $initDate = time();
         $this->modx->regClientCSS('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
-        $this->modx->regClientCSS(MODX_ASSETS_URL . 'components/remove_duplicates_modx/css/remove_duplicates_modx.css');
+        $this->modx->regClientCSS(MODX_ASSETS_URL . 'components/remove_duplicates_modx/css/remove_duplicates_modx.css?_='.$initDate);
         $this->modx->regClientStartupScript('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js');
-        $this->modx->regClientStartupScript(MODX_ASSETS_URL . 'components/remove_duplicates_modx/js/remove_duplicates_modx.js');
+        $this->modx->regClientStartupScript(MODX_ASSETS_URL . 'components/remove_duplicates_modx/js/remove_duplicates_modx.js?_='.$initDate);
 
         return '<div id="remove_duplicates_modx_panel" class="container-sm h-100 d-inline-block">
                     <div id="form_panel"></div>
