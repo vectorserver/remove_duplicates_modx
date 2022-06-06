@@ -11,7 +11,7 @@ if (!defined('MODX_CORE_PATH')) {
 return [
     'name' => 'Remove Duplicates MODX',
     'name_lower' => 'remove_duplicates_modx',
-    'version' => '1.1.12',
+    'version' => '1.1.14',
     'release' => 'pl',
     // Install package to site right after build
     'install' => true,
